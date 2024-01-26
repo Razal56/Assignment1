@@ -1,0 +1,44 @@
+
+// Class person represented
+class Person {
+ 
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+     // Get the name of the person.
+    getName() {
+        return this.name;
+    }
+
+      // Set the name of the person.
+    setName(name) {
+        this.name = name;
+    }
+
+     // Get the age of the person.
+    getAge() {
+        return this.age;
+    }
+
+     // Set the age of the person.
+    setAge(age) {
+        this.age = age;
+    }
+
+     // Greeting message with name and age displayed
+    display() {
+        console.log(`Hello everyone, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+
+// Instance of person
+const person = new Person();
+
+// Attributes of person
+person.setName("Rajal Rajthala");
+person.setAge(30);
+
+// Invoke display() to print the greeting message.
+person.display();
